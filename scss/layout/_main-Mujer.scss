@@ -1,0 +1,9 @@
+#ProductosMujer{
+    @extend #ProductosDestacados;
+}
+#TituloProductos_Mujer{
+    @extend #TituloProductos_Destacados;
+}
+#ProductosMujer-Y-Titulo{
+    @extend #ProductosHombre-Y-Titulo;
+}

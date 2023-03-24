@@ -1,0 +1,40 @@
+@media (min-width:1200px){
+    #ProductosMujer{
+        height: 800px;
+    }
+    #ProductosNiños{
+        height: 800px;
+    }
+    #ProductosHombre{
+        height: 900px;
+    }
+    .DivImagen{
+        height: 300px;
+    }
+    #SectionTexto{
+        width: 70%;
+        flex-direction: row;
+    }
+    
+
+    .Modelo{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 10x;
+        width: 200px;
+        height: 500px;
+        left: 0%;
+    }
+    #FotoModelo{
+        width: fit-content;
+        height: 100%;
+    }
+    #ContainerGeneral{
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: fit-content;
+    }
+
+
+}

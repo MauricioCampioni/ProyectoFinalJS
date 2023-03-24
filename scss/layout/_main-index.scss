@@ -1,0 +1,87 @@
+main {
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(
+	0deg,
+	rgba(0,0,0,0.2),
+	rgba(0,0,0,0.3)),
+    url("/assets/img/BackgroundBoca.jpg");
+    background-size: contain;
+    background-position: center center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    }
+    #BannerLogo{
+        margin-top: 180px;
+        width: 100%;
+        height: 100px;
+    }
+    #BannerImagen{
+        width: 100%;
+        height: 100%;
+    }
+    #ContainerGeneral{
+        display: flex;
+    }
+    .Modelo{
+        width: 0%;
+        height: 0px;
+    }
+    
+#TituloProductos_Destacados{
+    font-size: 30px;
+    font-family:'Roboto', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 30px;
+  text-align: center;
+}
+#ProductosDestacados{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-auto-rows: minmax(100px,auto);
+    grid-gap: 50px;
+}
+.TipografiaProductos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.TipografiaProductos:hover{
+    color: blue;
+}
+.ContainerPrecioComprar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Remera{
+    z-index: 1;
+    background-color: white;
+    box-shadow: 3px 2px 5px rgb(9, 6, 6);
+    transition: all 500ms;
+    border-style: solid;
+    border-width: 2px;
+    width: 200px;
+    height: 240px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.Short{
+    @extend .Remera
+}
+.ImagenRemera{
+    width: 100%;
+    height: 200px;
+}
+.ImagenShort{
+    @extend .ImagenRemera
+}

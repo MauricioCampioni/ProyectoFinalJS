@@ -1,0 +1,16 @@
+@import "./utilities/variable";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto:wght@400;500;700&display=swap');
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-Hombre";
+@import "./layout/main-Mujer";
+@import "./layout/main-Niños";
+@import "./layout/main-Nosotros";
+@import "./layout/footer";
+@import "./layout/media-tablets-vertical";
+@import "./layout/media-Escritorio";
+@import "./layout/media-escritorio-grande";
+@import "./layout/media-modelo.scss";
+

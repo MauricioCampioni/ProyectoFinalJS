@@ -1,0 +1,131 @@
+@media (min-width:992px){
+    header{
+        nav{
+            height: 80px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    #ContainerMenu, .Submenu{
+        width: 300px;
+    }
+    #MenuNavegacion{
+        width: fit-content;
+        flex-direction: row;
+        justify-content: center;
+    }
+   .LinkNavegacion{
+        margin: 20px;
+    }
+    #BocaStore{
+        font-size: 40px;
+        flex-direction: row;
+        width: fit-content;
+        margin-left: 30px;
+    }
+    #BannerLogo{
+    margin-top: 80px;
+        height: 200px;
+    }
+    #ProductosMujer{
+        height: 720px;
+    }
+    #ProductosNiños{
+        height: 720px;
+    }
+    #ProductosHombre{
+        grid-template-columns: repeat(3,auto);
+        height: 750px;
+    }
+    #ProductosDestacados{
+        grid-template-columns: repeat(3,auto);
+    }
+    #ProductosMujer-Y-Titulo{
+         margin-top: 80px;
+    }
+    #ProductosHombre-Y-Titulo{
+        @extend #ProductosMujer-Y-Titulo;
+    }
+    #ProductosNiños-Y-Titulo{
+        @extend #ProductosMujer-Y-Titulo;
+    }
+
+
+
+
+
+
+    
+    .Remera{
+        background-color: white;
+        box-shadow: 3px 2px 5px rgb(9, 6, 6);
+        transition: all 500ms;
+        border-style: solid;
+        border-width: 2px;
+        width: 200x;
+        height: 245px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .Short{
+        background-color: white;
+        box-shadow: 3px 2px 5px rgb(9, 6, 6);
+        transition: all 500ms;
+        border-style: solid;
+        border-width: 2px;
+        width: 200px;
+        height: 245px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .ImagenRemera{
+        width: 100%;
+        height: 200px;
+    }
+    .ImagenShort{
+        width: 100%;
+        height: 200px;
+    }
+    .ContainerPrecioComprar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 10px;
+    }
+    .TipografiaProductos{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    .Modelo{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 10x;
+        width: 200px;
+        height: 500px;
+        left: 0%;
+    }
+    #FotoModelo{
+        width: fit-content;
+        height: 100%;
+    }
+    #ContainerGeneral{
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: fit-content;
+    }
+}

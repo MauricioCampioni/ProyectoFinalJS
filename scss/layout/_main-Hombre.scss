@@ -1,0 +1,9 @@
+#ProductosHombre{
+   @extend #ProductosDestacados;
+}
+#TituloProductos_Hombre{
+    @extend #TituloProductos_Destacados;
+}
+#ProductosHombre-Y-Titulo{
+    margin-top: 180px;
+}

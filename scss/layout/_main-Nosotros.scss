@@ -1,0 +1,127 @@
+#UbicacionImagenes {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#LogoDeBoca {
+    width: 100%;
+    height: 100%;
+}
+.DivImagen {
+
+    width: 100%;
+    height: 300px;
+}
+
+#SectionTexto {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#DivSection {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SizeEscudoBoca {
+    width: 200px;
+    height: 300px;
+}
+
+.TamañoNosotrosEscudo {
+    width: 100%;
+    height: 100%;
+}
+
+.Parrafo-y-Titulo {
+    width: 100%;
+    margin: 50px;
+    color: rgb(19, 19, 7);
+
+    p {
+        margin: 10px;
+
+        h2 {
+            @extend p;
+        }
+    }
+}
+
+#Contenedor-formulario {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(232, 232, 108);
+    border-style: solid;
+    border-width: 4px;
+    width: 300px;
+    height: fit-content;
+}
+
+h3 {
+    color: rgb(9, 4, 4);
+    font-family: 'Roboto', Times, serif;
+    font-size: 30px;
+    margin: 5px 0px;
+}
+
+#Contacto {
+    text-align: center;
+}
+
+#Formulario {
+    margin-bottom: 20px;
+}
+
+.div.info {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin-left: 2px;
+    justify-content: center;
+    align-items: center;
+    width: 284px;
+    font-family: 'Roboto';
+    font-weight: 900;
+
+    input {
+        @extend form;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100%;
+    }
+}
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input, textarea {
+    @extend label;
+}
+.TextoQuienesSomos{
+    font-size: 20px;
+    font-family: 'Roboto'
+}
+.TituloQuienesSomos{
+    font-family: 'Roboto';
+    font-size: 30px ;
+}
+span{
+    font-weight: bold;
+}

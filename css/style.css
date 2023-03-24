@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  background-color: #010127; }
+  header nav {
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+
+  #Container-Carrito{
+    
+    width: 100%;
+    height: 100%
+  }
+  #Carrito{
+    width: 50px ;
+    height: 50px;
+  }
+
+#BocaStore {
+  color: blue;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  #BocaStore .TituloStore {
+    color: yellow; }
+
+#MenuNavegacion {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #MenuNavegacion a {
+    text-decoration: none; }
+
+.LinkNavegacion {
+  margin: 0px 50px; }
+
+.ColorLink {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Roboto', Times, serif;
+  transition: all 200ms;
+  color: black; }
+
+.ColorLink:hover {
+  color: blue; }
+
+.Submenu {
+  border-radius: 10px;
+  width: 640px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 35px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: #010127; }
+
+.Submenu li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  color: #fff;
+  font-family: 'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.MenuDesplegable li:hover .Submenu {
+  display: block; }
+
+.ColorMenu {
+  text-decoration: none;
+  font-size: 30px; }
+
+.MenuDesplegable {
+  width: 100%;
+  list-style: none; }
+
+#ContainerMenu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: fit-content; }
+
+#TamañoMenu {
+  width: 90%;
+  font-family: 'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #010127;
+  justify-content: center;
+  display: flex; }
+  #TamañoMenu .ColorMenu {
+    color: #fff; }
+
+main {
+  width: 100%;
+  height: fit-content;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("/assets/img/BackgroundBoca.jpg");
+  background-size: contain;
+  background-position: center center;
+  flex-direction: column;
+  display: flex;
+  align-items: center; }
+
+#BannerLogo {
+  margin-top: 180px;
+  width: 100%;
+  height: 100px; }
+
+#BannerImagen {
+  width: 100%;
+  height: 100%; }
+
+#ContainerGeneral {
+  display: flex; }
+
+.Modelo {
+  width: 0%;
+  height: 0px; }
+
+#TituloProductos_Destacados, #TituloProductos_Hombre, #TituloProductos_Mujer, #TituloProductos_Niños {
+  font-size: 30px;
+  font-family: 'Roboto', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  margin-top: 30px;
+  text-align: center; }
+
+#ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 50px; }
+
+
+
+
+.TipografiaProductos {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 20px;
+  text-decoration: none; }
+
+
+
+.TipografiaProductos:hover {
+  color: blue; }
+
+ .ContainerPrecioComprar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.Remera, .Short {
+  z-index: 1;
+  background-color: white;
+  box-shadow: 3px 2px 5px #090606;
+  transition: all 500ms;
+  border-style: solid;
+  border-width: 2px;
+  width: 200px;
+  height: 260px; }
+  .Remera:hover, .Short:hover {
+    transform: scale(1.1); }
+
+.ImagenRemera, .ImagenShort {
+  width: 100%;
+  height: 200px; }
+
+#ProductosMujer-Y-Titulo, #ProductosHombre-Y-Titulo, #ProductosNiños-Y-Titulo {
+  margin-top: 180px; }
+
+#UbicacionImagenes {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#LogoDeBoca {
+  width: 100%;
+  height: 100%; }
+
+.DivImagen {
+  width: 100%;
+  height: 300px; }
+
+#SectionTexto {
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column; }
+
+#DivSection {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.SizeEscudoBoca {
+  width: 200px;
+  height: 300px; }
+
+.TamañoNosotrosEscudo {
+  width: 100%;
+  height: 100%; }
+
+.Parrafo-y-Titulo {
+  width: 100%;
+  margin: 50px;
+  color: #131307; }
+  .Parrafo-y-Titulo p, .Parrafo-y-Titulo p h2 {
+    margin: 10px; }
+
+#Contenedor-formulario {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #e8e86c;
+  border-style: solid;
+  border-width: 4px;
+  width: 300px;
+  height: fit-content; }
+
+h3 {
+  color: #090404;
+  font-family: 'Roboto', Times, serif;
+  font-size: 30px;
+  margin: 5px 0px; }
+
+#Contacto {
+  text-align: center; }
+
+#Formulario {
+  margin-bottom: 20px; }
+
+.div.info {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column; }
+
+form, form input {
+  margin-left: 2px;
+  justify-content: center;
+  align-items: center;
+  width: 284px;
+  font-family: 'Roboto';
+  font-weight: 900; }
+  form textarea {
+    width: 100%;
+    height: 100%; }
+
+label, input, textarea {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.TextoQuienesSomos {
+  font-size: 20px;
+  font-family: 'Roboto'; }
+
+.TituloQuienesSomos {
+  font-family: 'Roboto';
+  font-size: 30px; }
+
+span {
+  font-weight: bold; }
+
+footer, footer .RedFacebook {
+  height: 55px;
+  background-color: #010127;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  footer .RedFacebook {
+    width: 40px;
+    height: 40px; }
+  footer .RedInstagram {
+    width: 50px;
+    height: 50px; }
+
+@media (min-width: 576px) {
+  #ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños, #ProductosHombre, #ProductosMujer, #ProductosNiños {
+    grid-template-columns: repeat(2, auto); } }
+
+@media (min-width: 992px) {
+  header nav {
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+     }
+  #ContainerMenu {
+    width: 300px; }
+    .Submenu{
+      width: 200px;
+    }
+  #MenuNavegacion {
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center; }
+  .LinkNavegacion {
+    margin: 20px; }
+  #BocaStore {
+    font-size: 40px;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: 30px; }
+  #BannerLogo {
+    margin-top: 80px;
+    height: 200px; }
+  #ProductosMujer {
+    height: 720px; }
+  #ProductosNiños {
+    height: 720px; }
+  #ProductosHombre {
+    grid-template-columns: repeat(3, auto);
+    height: 750px; }
+  #ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños {
+    grid-template-columns: repeat(3, auto); }
+  #ProductosMujer-Y-Titulo, #ProductosHombre-Y-Titulo, #ProductosNiños-Y-Titulo {
+    margin-top: 80px; }
+  .Remera, .Short {
+    background-color: white;
+    box-shadow: 3px 2px 5px #090606;
+    transition: all 500ms;
+    border-style: solid;
+    border-width: 2px;
+    width: 200x;
+    height: 260px; }
+    .Remera:hover, .Short:hover {
+      transform: scale(1.1); }
+  .Short {
+    background-color: white;
+    box-shadow: 3px 2px 5px #090606;
+    transition: all 500ms;
+    border-style: solid;
+    border-width: 2px;
+    width: 200px;
+    height: 260px; }
+    .Short:hover {
+      transform: scale(1.1); }
+  .ImagenRemera, .ImagenShort {
+    width: 100%;
+    height: 200px; }
+  .ImagenShort {
+    width: 100%;
+    height: 200px; }
+  .ContainerPrecioComprar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10px; }
+  .TipografiaProductos {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-decoration: none; }
+  .Modelo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10x;
+    width: 200px;
+    height: 500px;
+    left: 0%; }
+  #FotoModelo {
+    width: fit-content;
+    height: 100%; }
+  #ContainerGeneral {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content; } }
+
+@media (min-width: 1200px) {
+  #ProductosMujer {
+    height: 800px; }
+  #ProductosNiños {
+    height: 800px; }
+  #ProductosHombre {
+    height: 900px; }
+  .DivImagen {
+    height: 300px; }
+  #SectionTexto {
+    width: 70%;
+    flex-direction: row; }
+  .Modelo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10x;
+    width: 200px;
+    height: 500px;
+    left: 0%; }
+  #FotoModelo {
+    width: fit-content;
+    height: 100%; }
+  #ContainerGeneral {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content; } }
+
+@media (min-width: 1500px) {
+  .Modelo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10x;
+    width: 350px;
+    height: 700px;
+    left: 0%; }
+  #FotoModelo {
+    width: fit-content;
+    height: 100%; } }

@@ -1,0 +1,5 @@
+@media (min-width:576px){ 
+    #ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños{
+        grid-template-columns: repeat(2,auto);
+    }
+}

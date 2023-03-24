@@ -1,0 +1,9 @@
+#ProductosNiños{
+    @extend #ProductosDestacados;
+}
+#TituloProductos_Niños{
+    @extend #TituloProductos_Destacados;
+}
+#ProductosNiños-Y-Titulo{
+    @extend #ProductosHombre-Y-Titulo;
+}
