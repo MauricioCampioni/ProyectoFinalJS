@@ -111,7 +111,7 @@ if(localStorage.getItem("carrito")!=null){
 function mostrarProductosDOM(producto){
     
     let div=document.createElement('div');
-    div.setAttribute("id",`Conteiner-Carrito${producto.id}`);
+    div.setAttribute("id",`ListaCarrito${producto.id}`);
     div.innerHTML=`
     <h3>${producto.nombre}</h3>
     <h3>${producto.precio}</h3>
@@ -150,7 +150,7 @@ function mostrarProductosDOM(producto){
                     //LO ELIMINE DEL CARRITO
 
                     //Lo elimina del DOM
-                    let productoDomAEliminar=document.getElementById(`ProductoCarrito${producto.id}`);
+                    let productoDomAEliminar=document.getElementById(`ListaCarrito${producto.id}`);
                     listaProductoscarrito.removeChild(productoDomAEliminar);
 
                     //Lo elimina del array del carrito
@@ -167,10 +167,6 @@ function mostrarProductosDOM(producto){
 carrito.forEach(productoCarrito=>{
     mostrarProductosDOM(productoCarrito);
 });
-
-
-
-
 
 
 
@@ -224,7 +220,15 @@ stockProductos.forEach(producto => {
             }
         );
     }
+    function abrirCarrito() {
+        const carritoContainer = document.getElementById('Conteiner-Carrito');
+        carritoContainer.style.display = 'block';
+      }
+      const carritoImagen = document.getElementById('carrito-imagen');
 
+carritoImagen.addEventListener('click', abrirCarrito);
+
+      
     
     console.log(carrito);
     localStorage.setItem("carrito",JSON.stringify(carrito));    
